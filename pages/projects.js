@@ -1267,12 +1267,11 @@ export default () => (
                   </div>
                   <br />
                   <div>
-                    <video width="450" height="250" controls>
-                      <source
-                        src="static/videos/ISTS Final Video.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
+                    <iframe                       
+                        src="https://drive.google.com/file/d/1wrpx89pHOmazUICgRTBL6A2M9p9pQPUs/view?usp=sharing"
+                        width="640"
+                        height="480"
+                     />
                   </div>
                 </Col>
               </Row>
