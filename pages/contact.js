@@ -1,17 +1,6 @@
-import {
-  Card,
-  Layout,
-  Row,
-  Col,
-  Breadcrumb,
-  Icon,
-  Anchor,
-  Form,
-  Empty,
-} from 'antd';
+import {Layout, Row, Col, Breadcrumb, Icon, Divider} from 'antd';
 import Link from 'next/link';
-import '../style.less';
-import AnchorLink from 'antd/lib/anchor/AnchorLink';
+import '../styles.less';
 
 const {Header, Content, Footer} = Layout;
 export default () => (
@@ -112,7 +101,7 @@ export default () => (
         type="flex"
         style={{fontWeight: 'bold', fontSize: '40px', textAlign: 'center'}}
       >
-        <Col span={3} />
+        <Col span={6} />
         <Col span={6}>
           <Link href="mailto:kellie.sim.0101@gmail.com">
             <a>
@@ -127,67 +116,73 @@ export default () => (
             </a>
           </Link>
         </Col>
-        <Col span={6}>
-          <Link href="https://www.instagram.com/kellief0rnia/">
-            <a>
-              <Icon type="instagram" />
-            </a>
-          </Link>
-        </Col>
-        <Col span={43} />
+        <Col span={6} />
       </Row>
-      <br />
+      <p />
       <Row
         align="middle"
         type="flex"
         style={{fontWeight: 'bold', fontSize: '22px', textAlign: 'center'}}
       >
-        <Col span={3} />
+        <Col span={6} />
         <Col span={6}>
           Email
         </Col>
         <Col span={6}>
           LinkedIn
         </Col>
-        <Col span={6}>
-          Instagram
-        </Col>
-        <Col span={3} />
+        <Col span={6} />
       </Row>
       <Row
         align="middle"
         type="flex"
         style={{fontWeight: 'bold', fontSize: '12px', textAlign: 'center'}}
       >
-        <Col span={3} />
+        <Col span={6} />
         <Col span={6}>
           kellie.sim.0101@gmail.com
         </Col>
         <Col span={6}>
           https://www.linkedin.com/in/kellie-sim-1255aa51
         </Col>
-        <Col span={6}>
-          https://www.instagram.com/kellief0rnia/
-        </Col>
-        <Col span={3} />
+        <Col span={6} />
       </Row>
-      <br /><br /><br /><br /><br /><br /><br />
+      <p /><Divider /><p />
+      <Row>
+        <Col span={1} />
+        <Col span={22}>
+          <Row
+            align="middle"
+            type="flex"
+            style={{textAlign: 'center', fontWeight: 'bold', fontSize: '40px'}}
+          >
+            <Col span={2} />
+            <Col span={20}>
+              <div>
+                {/* need to change CV, remove address */}
+                <Link href="/static/Kellie_CV.pdf">
+                  <a download="Kellie_CV.pdf" target="_blank">
+                    <Icon type="download" />
+                  </a>
+                </Link>
+              </div>
+            </Col>
+            <Col span={2} />
+          </Row>
+        </Col>
+        <Col span={1} />
+      </Row>
+      <p />
       <Row
         align="middle"
-        justify="center"
         type="flex"
-        style={{
-          fontWeight: 'bold',
-          fontSize: '22px',
-          textAlign: 'center',
-          backgroundColor: '#ffffff',
-        }}
+        style={{fontWeight: 'bold', fontSize: '22px', textAlign: 'center'}}
       >
-        <Link>
-          <a>
-            Download CV
-          </a>
-        </Link>
+        <Col span={2} />
+        <Col span={20}>
+          Download CV
+        </Col>
+        <Col span={2} />
       </Row>
     </Content>
 

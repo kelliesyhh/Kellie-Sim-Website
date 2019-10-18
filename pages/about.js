@@ -10,7 +10,7 @@ import {
   Tabs,
 } from 'antd';
 import Link from 'next/link';
-import '../style.less';
+import '../styles.less';
 
 const {Header, Content, Footer} = Layout;
 const {TabPane} = Tabs;
@@ -164,20 +164,20 @@ export default () => (
               <Row>
                 <p />
                 <Col span={20}>
-                  <p>Cumulative GPA: 3.92</p>
+                  <p>Cumulative GPA: 3.94</p>
                   <p>
                     4 Module Prizes - Innovation Toolkit: Acquiring the Skills, Engineering Mathematics 3A,
                     {' '}
                     Fundamentals of Object Oriented Programming, Engineering Design
                   </p>
                   <p>
-                    10 Distinctions - Innovation Toolkit: Acquiring the Skills, Engineering Mechanics, Engineering Mathematics 3A,
+                    12 Distinctions - Innovation Toolkit: Acquiring the Skills, Engineering Mechanics, Engineering Mathematics 3A,
                     {' '}
                     Fundamentals of Object Oriented Programming, Innovation Toolkit: Applying the Skills, Strength of Materials,
                     {' '}
                     China: The Global Game Changer, Analogue Circuit Design & Applications, Engaging the Dragon: An Immersion Trip,
                     {' '}
-                    Engineering Design
+                    Engineering Design, Complex Numbers, Matrices and Linear Spaces, Polar Coordinates and Real World Mathematics
                   </p>
                   <p>1 Pass with Merit - Sports & Wellness</p>
                   <p>
@@ -256,7 +256,7 @@ export default () => (
                   }}
                 >
                   <Row>
-                    Changi General Hospital, Otorhinolaryngology Department | Attachment
+                    Changi General Hospital, Otorhinolaryngology Department | Student Attachment
                   </Row>
                 </Col>
                 <Col span={8} style={{fontWeight: 'bold', fontSize: '16px'}}>
@@ -267,7 +267,7 @@ export default () => (
               <Row>
                 <Col span={20}>
                   <p>
-                    Completed a 3 day attachment at the otorhinolaryngology department
+                    Completed a 3 day attachment at the otorhinolaryngology department.
                   </p>
                 </Col>
               </Row>
@@ -282,7 +282,7 @@ export default () => (
                   }}
                 >
                   <Row>
-                    A*STAR, Institute for Infocomm Research, Deep Learning in Healthcare | Attachment
+                    A*STAR, Institute for Infocomm Research, Deep Learning in Healthcare | Research Attachment
                   </Row>
                 </Col>
                 <Col span={8} style={{fontWeight: 'bold', fontSize: '16px'}}>
@@ -708,82 +708,7 @@ export default () => (
               <BackTop visibilityHeight={700} />
             </TabPane>
 
-            <TabPane tab="Skills" key="4">
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  Technical
-                </Col>
-              </Row>
-              <p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={20}>
-                  <p>
-                    Milling, Turning, Sheet Metal Work, Electrical & Electronic Measurement and Test Instrumentation,
-                    {' '}
-                    Breadboard Fabrication and Testing, Microcontroller Programming and Interfacing,
-                    {' '}
-                    Printed Circuit Board Fabrication, Wiring, Assembly and Testing
-                  </p>
-                </Col>
-              </Row>
-              <p /><Divider /><p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  Software
-                </Col>
-              </Row>
-              <p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={20}>
-                  <p>
-                    Microsoft Office, AutoCAD, Tina10, Adobe Photoshop, iMovie, Android Studio
-                  </p>
-                </Col>
-              </Row>
-              <p /><Divider /><p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  Programming
-                </Col>
-              </Row>
-              <p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={20}>
-                  <p>C, C#, C++ , Java (intermediate)</p>
-                  <p>Python, HTML, Arduino, JavaScript, CSS (basic)</p>
-                </Col>
-              </Row>
-              <p /><Divider /><p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  Languages
-                </Col>
-              </Row>
-              <p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={20}>
-                  <p>
-                    English (native), Chinese (fluent), Hokkien (basic)
-                  </p>
-                </Col>
-              </Row>
-              <p /><Divider /><p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  Others
-                </Col>
-              </Row>
-              <p />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
-                <Col span={20}>
-                  <p>
-                    Swimming (up till SwimSafer Bronze), First Aid Certified
-                  </p>
-                </Col>
-              </Row>
-            </TabPane>
-
-            <TabPane tab="Achievements" key="5">
+            <TabPane tab="Achievements" key="4">
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
                   Ngee Ann Polytechnic
@@ -797,7 +722,7 @@ export default () => (
                   </Row>
                 </Col>
                 <Col span={9}>
-                  June 2019 (?)
+                  June 2019
                 </Col>
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
@@ -1057,7 +982,9 @@ export default () => (
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={14}>
-                  placeholder for more details
+                  I was awarded this prize as I was one of the top GCE O-Level Performers in my school, 
+                  the School of Science and Technology, Singapore, for the class of 2016. I obtained 5 or more
+                  distinctions and was within the top 10% of the cohort. 
                 </Col>
               </Row>
               <br />
@@ -1182,16 +1109,68 @@ export default () => (
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={11}>
                   <Row>
-                    ICAS awards.....i guess
+                    UNSW Global ICAS Science 2012: Distinction
                   </Row>
                 </Col>
                 <Col span={9}>
-                  placeholder for more details
+                  2012 (?)
                 </Col>
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={14}>
-                  placeholder for more details
+                  I took part in UNSW Global's ICAS Assessment for Science and received the Distinction award for being
+                  in the top 11% of all participants.
+                </Col>
+              </Row>
+              <br/>
+              <Row align="middle" style={{textAlign: 'left'}}>
+                <Col span={11}>
+                  <Row>
+                    UNSW Global ICAS Science 2011: Distinction
+                  </Row>
+                </Col>
+                <Col span={9}>
+                  2011 (?)
+                </Col>
+              </Row>
+              <Row align="middle" style={{textAlign: 'left'}}>
+                <Col span={14}>
+                  I took part in UNSW Global's ICAS Assessment for Science and received the Distinction award for being
+                  in the top 11% of all participants.
+                </Col>
+              </Row>
+              <br/>
+              <Row align="middle" style={{textAlign: 'left'}}>
+                <Col span={11}>
+                  <Row>
+                    UNSW Global ICAS Science 2010: Distinction
+                  </Row>
+                </Col>
+                <Col span={9}>
+                  2010 (?)
+                </Col>
+              </Row>
+              <Row align="middle" style={{textAlign: 'left'}}>
+                <Col span={14}>
+                  I took part in UNSW Global's ICAS Assessment for Science and received the Distinction award for being
+                  in the top 11% of all participants.
+                </Col>
+              </Row>
+              <br/>
+              <Row align="middle" style={{textAlign: 'left'}}>
+                <Col span={11}>
+                  <Row>
+                    UNSW Global ICAS English 2008: Distinction
+                  </Row>
+                </Col>
+                <Col span={9}>
+                  2010 (?)
+                </Col>
+              </Row>
+              <Row align="middle" style={{textAlign: 'left'}}>
+                <Col span={14}>
+                  I took part in UNSW Global's ICAS Assessment for English and received the Distinction award for being
+                  in the top 11% of all participants.
                 </Col>
               </Row>
               <p /><Divider /><p />
@@ -1213,7 +1192,7 @@ export default () => (
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={14}>
-                  placeholder for more details
+                  I completed an online course, Python for Data Science and Machine Learning Bootcamp, on Udemy.
                 </Col>
               </Row>
               <br />
@@ -1229,7 +1208,9 @@ export default () => (
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={14}>
-                  placeholder for more details
+                  I took a test by the Cambridge Certification Authority to certify my 
+                  knowledge of Python and software development basics with this beginner certification.
+                  I was awarded the Python Level 1 Certificate.
                 </Col>
               </Row>
               <br />
@@ -1245,7 +1226,9 @@ export default () => (
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={14}>
-                  placeholder for more details
+                I took a test by the Cambridge Certification Authority which 
+                tested basic Java and Android concepts such as buttons, textViews and arrays, maps, if statements and loops.
+                I was awarded the Java Level 1 Certificate.
                 </Col>
               </Row>
               <br />
@@ -1260,8 +1243,8 @@ export default () => (
                 </Col>
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
-                <Col span={14}>
-                  placeholder for more details
+                <Col span={14}> 
+                I completed an online course, Android Development: Concurrent Programming, on LinkedIn Learning.
                 </Col>
               </Row>
               <br />
@@ -1277,7 +1260,7 @@ export default () => (
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={14}>
-                  placeholder for more details
+                  I completed an online course, Leading with Emotional Intelligence (2013), on LinkedIn Learning.
                 </Col>
               </Row>
               <br />
@@ -1293,7 +1276,7 @@ export default () => (
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={14}>
-                  placeholder for more details
+                  I completed an online course, Delegating Tasks to Your Team (2013), on LinkedIn Learning.
                 </Col>
               </Row>
               <br />
@@ -1309,7 +1292,7 @@ export default () => (
               </Row>
               <Row align="middle" style={{textAlign: 'left'}}>
                 <Col span={14}>
-                  placeholder for more details
+                  I completed an online course, Calc001x: Pre-University Calculus by DelftX, on edX.
                 </Col>
               </Row>
               <br />
@@ -1437,6 +1420,81 @@ export default () => (
                 </Col>
               </Row>
               <BackTop visibilityHeight={700} />
+            </TabPane>
+
+            <TabPane tab="Skills" key="5">
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  Technical
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <p>
+                    Milling, Turning, Sheet Metal Work, Electrical & Electronic Measurement and Test Instrumentation,
+                    {' '}
+                    Breadboard Fabrication and Testing, Microcontroller Programming and Interfacing,
+                    {' '}
+                    Printed Circuit Board Fabrication, Wiring, Assembly and Testing
+                  </p>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  Software
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <p>
+                    Microsoft Office, AutoCAD, Tina10, Adobe Photoshop, iMovie, Android Studio
+                  </p>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  Programming
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <p>C, C#, C++ , Java (intermediate)</p>
+                  <p>Python, HTML, Arduino, JavaScript, CSS (basic)</p>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  Languages
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <p>
+                    English (native), Chinese (fluent), Hokkien (basic)
+                  </p>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={11} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  Others
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <p>
+                    Swimming (up till SwimSafer Bronze), First Aid Certified
+                  </p>
+                </Col>
+              </Row>
             </TabPane>
 
             <TabPane tab="Interests" key="6">

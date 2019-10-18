@@ -1,5 +1,4 @@
 import {
-  Card,
   Layout,
   Row,
   Col,
@@ -11,7 +10,7 @@ import {
   BackTop,
 } from 'antd';
 import Link from 'next/link';
-import '../style.less';
+import '../styles.less';
 
 const {Header, Content, Footer} = Layout;
 const {TabPane} = Tabs;
@@ -151,17 +150,19 @@ export default () => (
                   </div>
                   <br />
                   <div>
-                    {/* to change later */}
-                    <img
-                      width="450"
-                      height="250"
-                      src="static/images/burger1.jpg"
-                      type="img/jpg"
+                    <iframe
+                      src="https://docs.google.com/presentation/d/e/2PACX-1vRGLazJ1Pc1c_ADrysicS72rBUCy69AQVD0cE9wV27W0CdWdaZAxXYG1NaRf3aWqQ/embed?start=false&loop=false&delayms=60000"
+                      frameborder="0"
+                      width="640"
+                      height="389"
+                      allowfullscreen="true"
+                      mozallowfullscreen="true"
+                      webkitallowfullscreen="true"
                     />
                   </div>
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
                   Development of Arduino System that aids Patients with Anxiety
@@ -216,7 +217,7 @@ export default () => (
                   </div>
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
                   Mockup of Android Application to Aid Visually Impaired
@@ -247,10 +248,10 @@ export default () => (
                   </div>
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  Semi-Automated Hamster Food Dispenser{' '}
+                  Semi-Automated Hamster Food Dispenser
                 </Col>
                 <Col
                   span={8}
@@ -300,6 +301,7 @@ export default () => (
                       src="static/images/8innova_bv.png"
                       type="img/png"
                     />
+                    <p />
                     <img
                       width="450"
                       height="250"
@@ -315,10 +317,10 @@ export default () => (
                   </div>
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  A revamped Kopitiam - to easily identify if a seat is taken (Idea 1)
+                  A Revamped Kopitiam (Idea 1)
                 </Col>
                 <Col
                   span={8}
@@ -335,6 +337,8 @@ export default () => (
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={20}>
                   <div>
+                    For my Year 1 Innovation Toolkit: Acquiring the Skills (8INNOVA) module, I did a project
+                    with the aim of allowing users to easily identify if a seat at Kopitiam is taken.
                     When the user sits down on the seat, they will automatically be prompted to tap their Kopitiam Card
                     {' '}
                     on the card reader. They will be required to “deposit” a fee of $5, which will automatically be deducted
@@ -375,10 +379,10 @@ export default () => (
                   </div>
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  A revamped Kopitiam - to easily identify if a seat is taken (Idea 2)
+                  A Revamped Kopitiam (Idea 2)
                 </Col>
                 <Col
                   span={8}
@@ -395,6 +399,8 @@ export default () => (
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={20}>
                   <div>
+                    For my Year 1 Innovation Toolkit: Acquiring the Skills (8INNOVA) module, I did a project
+                    with the aim of allowing users to easily identify if a seat at Kopitiam is taken.
                     During peak hours, the user will be given a buzzer at the food stall. When they are purchasing
                     {' '}
                     their food, their card details will be tracked and linked to the buzzer (until they tap out).
@@ -424,7 +430,6 @@ export default () => (
                     This idea will enable the tables in the food court to be freed up at a quicker rate,
                     {' '}
                     which will ease the congestion in the food court during peak hours.
-
                   </div>
                   <br />
                   <div>
@@ -449,10 +454,10 @@ export default () => (
                   </div>
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  Bridge
+                  ENGMEC Project: Bridge
                 </Col>
                 <Col
                   span={8}
@@ -471,14 +476,24 @@ export default () => (
                   <div>
                     For my Year 1 Engineering Mechanics module in Ngee Ann Polytechnic,
                     {' '}
-                    I worked with 3 other teammates on a bridge
+                    I worked with 3 other teammates on a bridge that was to withstand heavy loads.
+                    Our bridge managed to sustain a weight of 40kg.
+                  </div>
+                  <br />
+                  <div>
+                    <img
+                      width="450"
+                      height="250"
+                      // src="static/images/8innova_buzzer1.jpg"
+                      type="img/jpg"
+                    />
                   </div>
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  Compro mini project
+                  COMPRO Mini Project
                 </Col>
                 <Col
                   span={8}
@@ -494,16 +509,94 @@ export default () => (
               <p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={20}>
-                  <div />
+                  <div>
+                    I worked with 2 other teammates to come up with a program that revolved around the topic of time.
+                    We incorporated a time zone converter, a feature for users to find out their age, chinese zodiac,
+                    calculate the time to their next birthday, find out their horoscope and rising signs, and
+                    a sunrise and sunset time calculator.
+                  </div>
+                  <br />
+                  <div>
+                    <img
+                      width="400"
+                      height="200"
+                      src="static/images/compro_1.png"
+                      type="img/png"
+                    />
+                    <img
+                      width="400"
+                      height="200"
+                      src="static/images/compro_2.png"
+                      type="img/png"
+                    />
+                    <p />
+                    <img
+                      width="375"
+                      height="200"
+                      src="static/images/compro_3.png"
+                      type="img/png"
+                    />
+                    <img
+                      width="375"
+                      height="200"
+                      src="static/images/compro_4.png"
+                      type="img/png"
+                    />
+                    <p />
+                    <img
+                      width="300"
+                      height="200"
+                      src="static/images/compro_5.png"
+                      type="img/png"
+                    />
+                    <img
+                      width="300"
+                      height="200"
+                      src="static/images/compro_6.png"
+                      type="img/png"
+                    />
+                    <img
+                      width="300"
+                      height="200"
+                      src="static/images/compro_7.png"
+                      type="img/png"
+                    />
+                    <p />
+                    <img
+                      width="300"
+                      height="200"
+                      src="static/images/compro_8.png"
+                      type="img/png"
+                    />
+                    <img
+                      width="300"
+                      height="200"
+                      src="static/images/compro_9.png"
+                      type="img/png"
+                    />
+                    <img
+                      width="300"
+                      height="200"
+                      src="static/images/compro_10.png"
+                      type="img/png"
+                    />
+                    <p />
+                    <img
+                      width="300"
+                      height="200"
+                      src="static/images/compro_11.png"
+                      type="img/png"
+                    />
+                  </div>
                 </Col>
               </Row>
               <br />
               <BackTop visibilityHeight={400} />
             </TabPane>
-            <Tabpane tab="SST Projects" key="2">
+            <TabPane tab="SST Projects" key="2">
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
-                  RDFZ - SST iBook
+                  Wireless / Cordless Headset
                 </Col>
                 <Col
                   span={8}
@@ -513,18 +606,108 @@ export default () => (
                     textAlign: 'right',
                   }}
                 >
-                  January 2016
+                  January 2016 - August 2016
                 </Col>
               </Row>
               <p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={20}>
                   <div>
-                   
+                    For the 'O' Level Coursework component of my Fundamentals of Electronics subject in Sec 4,
+                    {' '}
+                    we were tasked to create a wireless headset which uses infrared, radio frequency or other
+                    {' '}
+                    wireless technology for signal transmission. It should also be easy to use
+                    and not costly. To do this, two circuits were made (one transmitter circuit and one receiver
+                    {' '}
+                    circuit) and were designed, built and tested over a period of 8 months.
                   </div>
                 </Col>
               </Row>
-              <br/>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  RDFZ - SST iBook about Hutongs in China
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  May 2015 - January 2016
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div>
+                    In collaboration with Ren Da Fu Zhong Xishan School, my team comprising of 2 SST students and
+                    2 students from RDFZ designed an iBook about the hutongs (胡同) in China, which we conducted
+                    site visits at. This was done as a pilot project between the 2 schools as a follow up to the RDFZ
+                    {' '}
+                    Global Citizenship Programme 2015.
+                    In the iBook, we also compared the similarities and differences and differences
+                    between Singapore and China in terms of residential areas. The iBook my group made was shared at
+                    the iSummit in Beijing in 2016.
+                  </div>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  Water Treatment Machine Prototype
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  February 2015 - March 2015
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div>
+                    For my Sec 3 Chemistry Performance Task, my team and I were tasked to come up with a prototype of a
+                    {' '}
+                    water treatment machine, while applying what we had learnt in the topic "Separation Techniques" as well
+                    as demonstrating self-directed learning to read up about other topics (e.g. Salts, Acids and Bases)
+                    {' '}
+                    we had not learnt since we needed to identify the chemical content of the sample.
+                  </div>
+                  <br />
+                  <div>
+                    <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                      <Col span={12}>
+                        <img
+                          width="439"
+                          height="620"
+                          src="static/images/chem_pt_poster.png"
+                          type="img/png"
+                        />
+                      </Col>
+                      <Col span={8}>
+                        <iframe
+                          width="630"
+                          height="345"
+                          src="https://www.youtube.com/embed/GX34hkgWAdA"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        />
+                      </Col>
+                    </Row>
+                  </div>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
                   Mousetrap Car
@@ -544,14 +727,307 @@ export default () => (
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={20}>
                   <div>
-                   
+                    For my Secondary 3 Physics Performance Task, my team and I built a mousetrap car to find the optimal
+                    design for a mousetrap car to travel fast but far. Our car design made use more of a slim, compact
+                    {' '}
+                    and light design to reduce the mass of the car (which in turn reduced inertia).
+                    {' '}
+                    This therefore caused the car to be able to move easier, compared to the other mousetrap cars
+                    which are bigger in size and have bigger wheels.
+                  </div>
+                  <br />
+                  <div>
+                    <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                      <Col span={15}>
+                        <img
+                          width="533"
+                          height="200"
+                          src="static/images/mousetrap_car.png"
+                          type="img/png"
+                        />
+                      </Col>
+                      <Col span={5}>
+                        <iframe
+                          width="373"
+                          height="210"
+                          src="https://www.youtube.com/embed/98dfGa-SIUM"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        />
+                      </Col>
+                    </Row>
                   </div>
                 </Col>
               </Row>
-              <br/>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  NTU-SST Flagship Programme 2014
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  June 2014
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div>
+                    This project involved the programming of the Evalbot. Some parts that we had to program were
+                    the Evalbot's motor controllers, Bump sensors, LEDs, OLED and speakers using a programming
+                    {' '}
+                    application called IAR. Using IAR, we were required to make the robot complete several mazes
+                    {' '}
+                    without any hitches. We were also able to add sounds, lights and other distinctive qualities
+                    {' '}
+                    to make it more appealing. This project allowed me to appreciate and understand the hard
+                    work and effort put into making the modern embedded systems, such as phones, that
+                    we take for granted today. This project provided us with the opportunity to train our determination
+                    as we had to run back and forth from the track to our computers to make amendments to our parameters
+                    if our original programming was incorrect. Even using calculations, the results would not be
+                    {' '}
+                    accurate and the only way to solve the problem was to constantly try out the Evalbot on the track
+                    {' '}
+                    until the perfect parameters were found.{' '}
+                  </div>
+                  <br />
+                  <div>
+                    <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                      <Col span={15}>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/I9fHHgXJ0DI"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        />
+                      </Col>
+                      <Col span={5}>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/fLG6zuHxcss"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        />
+                      </Col>
+                    </Row>
+                  </div>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  I&E Hueylicious
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  March 2014 - July 2014
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div>
+                    For our Secondary 2 Innovation and Entrepreneurship subject project, we were tasked to
+                    come up with a business feasibility plan for any product of our choice.
+                    My group decided to create a B2C business selling Tao Huey and other desserts. We
+                    considered factors such as location, did basic market analysis, thought of potential
+                    marketing strategies, decided on a good price to sell our items and came up with a
+                    marketing plan based on the 4Ps (Product, Price)
+                  </div>
+                  <br />
+                  <div>
+                    <iframe
+                      src="https://docs.google.com/presentation/d/e/2PACX-1vSkd7d27qWR8GSmL0tc2HEeS_IMsgAme_SQ_Wbn4xn2KtjDj_RjcuLKNh-Lp1Z9Ow/embed?start=false&loop=false&delayms=60000"
+                      frameborder="0"
+                      width="480"
+                      height="299"
+                      allowfullscreen="true"
+                      mozallowfullscreen="true"
+                      webkitallowfullscreen="true"
+                    />
+                  </div>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
                   The Boy in Striped Pyjamas
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  February 2014 - April 2014
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div />
+                  <br />
+                  <div>
+                    <iframe
+                      src="https://docs.google.com/presentation/d/e/2PACX-1vRpShEWi1nOjW9wEbQH4SJf08-f55WZN2OJv3Dq70p_LzETjwG5Q96XJpzDjjOoLw45_058NKl_nd8S/embed?start=false&loop=false&delayms=60000"
+                      frameborder="0"
+                      width="480"
+                      height="299"
+                      allowfullscreen="true"
+                      mozallowfullscreen="true"
+                      webkitallowfullscreen="true"
+                    />
+                  </div>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  ADMT Architectural Design Project: Our Corner
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  July 2014 - August 2014
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div>
+                    Our Corner is the redesigned version of the mini-amphitheatre,
+                    {' '}
+                    an area outside the Indoor Sports Hall of SST. It consists of a
+                    {' '}
+                    mini-stage, and a room.
+                    The design was inspired by Our Space, a Students’ Lounge in SST.
+                    {' '}
+                    Thus, the area is user-friendly and will be maintained by students.
+                    The mini-stage is used for performances, where students can
+                    visit for free and perform without restraint (of course,
+                    it must not be so loud that lessons get affected!)
+                    The room at the back is sound-proof, so that any students
+                    who wish to relax or study there will
+                    not be affected by the noise from the performances on the
+                    mini-stage. Students who are performing could also use it
+                    as a backstage. The steps are where the audience can
+                    watch performances or sit and relax.
+                    Beanbags will be provided in the room as well as on the steps,
+                    {' '}
+                    however in the event that they are damaged, students
+                    will be punished accordingly.
+                    During wet weather, shelter is also provided nearby
+                    (Block D or ISH) and in the room. The name “Our Corner” shows
+                    {' '}
+                    that this area is firstly, our responsibility, and that it is
+                    {' '}
+                    just one of the many corners in SST which we have developed.
+                    In Our Corner, the walls are also covered with the history
+                    of SST and there will be empty spaces left for future
+                    generations to come.
+                  </div>
+                  <br />
+                  <div>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/KnwoutmuaGA"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    />
+                  </div>
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  ADMT Video Project 2014
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  February 2014 - May 2014
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div>
+                    In Secondary 2, we were taught the basics of videography and tasked to
+                    film a short film from scratch. Over the course of 3 months, we came up with
+                    the script and screenplay for the film, filmed the various scenes and edited
+                    the film. I was the logistics and audio specialist for this project.
+                  </div>
+                  <br />
+                  <div>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/DAy6fHZzvP8"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    />
+                  </div>
+                </Col>
+              </Row>
+              {/* add in another time 
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  ADMT Cardboard cutting to get chair
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  ?? 2013
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div />
+                </Col>
+              </Row>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  ISS{' '}
                 </Col>
                 <Col
                   span={8}
@@ -567,14 +1043,34 @@ export default () => (
               <p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={20}>
-                  <div>
-                   
-                  </div>
+                  <div />
                 </Col>
               </Row>
-              <br/>
-              {/* foe proj, admt projs, i&e projs, phy pts, chem pts, ict?? */}
-            </Tabpane>
+              <p /><Divider /><p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
+                  IRS proj
+                </Col>
+                <Col
+                  span={8}
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textAlign: 'right',
+                  }}
+                >
+                  ?? 2013 and 2014
+                </Col>
+              </Row>
+              <p />
+              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+                <Col span={20}>
+                  <div />
+                </Col>
+              </Row>
+              <p>foe proj, admt projs, i&e projs, phy pts, chem pts, ict??</p> 
+              add in another time */}
+            </TabPane>
             <TabPane tab="Internship Projects" key="3">
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
@@ -606,13 +1102,16 @@ export default () => (
                   </div>
                   <br />
                   <div>
-                    {/* to change later */}
-                    <img
-                      width="450"
-                      height="250"
-                      src="static/images/burger1.jpg"
-                      type="img/jpg"
+                    <iframe
+                      src="https://docs.google.com/presentation/d/e/2PACX-1vTFEywOcZQmsGvd7ZM-Uczq-GbMsQ_ZPiVwVvecLHRA9HLsMWtst9Q_YH0vlnyJ9NrMKgi1Dblu1Ldz/embed?start=false&loop=false&delayms=5000"
+                      frameborder="0"
+                      width="480"
+                      height="299"
+                      allowfullscreen="true"
+                      mozallowfullscreen="true"
+                      webkitallowfullscreen="true"
                     />
+                    <p>(Last updated 27 September 2019, more updates will come soon!)</p>
                   </div>
                 </Col>
               </Row>
@@ -658,7 +1157,9 @@ export default () => (
                     {' '}
                     severe health issues. Apart from this, the poor housing design causes the urban poor
                     {' '}
-                    to be unable to utilise electric services.
+                    to be unable to utilise electric services. All in all, our prototype targeted all of these problems
+                    {' '}
+                    through the construction of a model house which could be built in these circumstances.
                   </div>
                   <br />
                   <div>
@@ -672,8 +1173,8 @@ export default () => (
                   </div>
                 </Col>
               </Row>
-              <br />
-              <Row align="middle" type="flex" style={{textAlign: 'left'}}>
+              <p /><Divider /><p />
+              {/* <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
                   Pre-University Seminar 2019
                 </Col>
@@ -694,7 +1195,7 @@ export default () => (
                   <div />
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p /> */}
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
                   SUTD Compact 3.007 2019
@@ -722,17 +1223,16 @@ export default () => (
                   </div>
                   <br />
                   <div>
-                    {/* to change later */}
                     <img
-                      width="450"
-                      height="250"
-                      src="static/images/burger1.jpg"
+                      width="440"
+                      height="620"
+                      src="static/images/compact_3.007_javer.jpg"
                       type="img/jpg"
                     />
                   </div>
                 </Col>
               </Row>
-              <br />
+              <p /><Divider /><p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={15} style={{fontWeight: 'bold', fontSize: '16px'}}>
                   International Seminar on Technology for Sustainability 2018
@@ -751,13 +1251,35 @@ export default () => (
               <p />
               <Row align="middle" type="flex" style={{textAlign: 'left'}}>
                 <Col span={20}>
-                  <div />
+                  <div>
+                    In October 2018, my team and I developed a mock-up application with a chatbot, 360° video,
+                    customised tour programs and e-tickets to improve user experience
+                    for Lomprayah. We found that the main problems that plagued users that the booking of Lomprayah's
+                    catamarans were hard, the staff were hard to contact (adding on to the language barrier for
+                    {' '}
+                    foreign travellers) and there was little customisability available.
+                    For Lomprayah, the main problems were that there were little customers during off-peak
+                    {' '}
+                    periods, there was a lack of proper advertisements and marketing for the company.
+                    Our mock-up application UI was designed with Photoshop, the chatbot was made
+                    using Amazon Lex. The customised tour programs and e-tickets could be accessed through the chatbot
+                    as well as within the application itself.{' '}
+                  </div>
+                  <br />
+                  <div>
+                    <video width="450" height="250" controls>
+                      <source
+                        src="static/videos/ISTS Final Video.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
                 </Col>
               </Row>
               <br />
             </TabPane>
 
-            <TabPane tab="Personal Projects" key="5">
+            {/* <TabPane tab="Personal Projects" key="5">
               <Row align="middle" type="flex" style={{textAlign: 'center'}}>
                 <Col span={2} />
                 <Col span={20}>
@@ -767,7 +1289,7 @@ export default () => (
                 </Col>
                 <Col span={2} />
               </Row>
-            </TabPane>
+            </TabPane> */}
           </Tabs>
         </Col>
         <Col span={1} />

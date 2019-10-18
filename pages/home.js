@@ -10,7 +10,7 @@ import {
   Divider,
 } from 'antd';
 import Link from 'next/link';
-import '../style.less';
+import '../styles.less';
 // import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 const {Header, Content, Footer} = Layout;

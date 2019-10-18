@@ -1,7 +1,7 @@
 // https://www.elegantthemes.com/blog/wordpress/react-js-for-wordpress-users-a-basic-introduction
 import {Layout, Row, Col, Breadcrumb, Icon, Empty, Tabs} from 'antd';
 import Link from 'next/link';
-import '../style.less';
+import '../styles.less';
 
 const {Header, Content, Footer} = Layout;
 const {TabPane} = Tabs;
@@ -113,23 +113,57 @@ export default () => (
             <Col span={20}>
               <div>
                 {/* <Empty description="Oops, nothing here yet. Check back again later!" /> */}
-                <Link href="https://kelliesyhh.home.blog/blog-feed">
+                <Link href="https://kelliesyhh.wordpress.com/blog-feed">
                   <a>
                     <Icon type="file-text" />
                   </a>
                 </Link>
-                <iframe
-                  width="100%"
-                  frameborder="0"
-                  class="rssdog"
-                  src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fkelliesyhh.home.blog%2Ffeed%2F&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=%23ffffff&titlebgcol=transparent&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"
-                />
               </div>
             </Col>
             <Col span={2} />
           </Row>
         </Col>
         <Col span={1} />
+      </Row>
+      <p />
+      <Row
+        align="middle"
+        type="flex"
+        style={{fontWeight: 'bold', fontSize: '22px', textAlign: 'center'}}
+      >
+        <Col span={2} />
+        <Col span={20}>
+          Wordpress Blog
+        </Col>
+        <Col span={2} />
+      </Row>
+      <Row
+        align="middle"
+        type="flex"
+        style={{fontWeight: 'bold', fontSize: '12px', textAlign: 'center'}}
+      >
+        <Col span={2} />
+        <Col span={20}>
+          https://kelliesyhh.wordpress.com/blog-feed
+        </Col>
+        <Col span={2} />
+      </Row>
+      <br />
+      <Row
+        align="middle"
+        type="flex"
+        style={{fontWeight: 'bold', fontSize: '12px', textAlign: 'center'}}
+      >
+        <Col span={2} />
+        <Col span={20}>
+          <iframe
+            width="100%"
+            frameborder="0"
+            class="rssdog"
+            src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fkelliesyhh.wordpress.com%2Ffeed%2F&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&linktarget=_blank&textsize=inherit&bordercol=transparent&headbgcol=transparent&headtxtcol=%23ffffff&titlebgcol=transparent&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"
+          />
+        </Col>
+        <Col span={2} />
       </Row>
     </Content>
 
