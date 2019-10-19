@@ -17,73 +17,73 @@ const {TabPane} = Tabs;
 
 export default () => (
   <Layout>
-    <Header>
-      <Row justify="center" type="flex" style={{backgroundColor: '#cce6ff'}}>
-        <Col
-          span={10}
-          style={{
-            textAlign: 'left',
-            height: 50,
-            display: 'flex',
-            justifyContent: 'left',
-          }}
-        >
-          <span>
-            Sim Yu Hui, Kellie {' '}| {' '}
-            Looking to use my engineering skills to aid those in need
-            {' '}
-            {' '}
-            <Icon type="bulb" theme="filled" />
-          </span>
-        </Col>
-        <Col
-          span={12}
-          style={{
-            textAlign: 'left',
-            height: 50,
-            display: 'flex',
-            justifyContent: 'flex-end',
-            textTransform: 'uppercase',
-          }}
-        >
-          <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/home">
-              <a>
-                Home
-              </a>
-            </Link>
-          </div>
-          <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/about">
-              <a>
-                About
-              </a>
-            </Link>
-          </div>
-          <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/projects">
-              <a>
-                Projects
-              </a>
-            </Link>
-          </div>
-          <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/blog">
-              <a>
-                Blog
-              </a>
-            </Link>
-          </div>
-          <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/contact">
-              <a>
-                Contact
-              </a>
-            </Link>
-          </div>
-        </Col>
-      </Row>
-    </Header>
+  <Header>
+    <Row justify="center" type="flex" style={{backgroundColor: '#cce6ff'}}>
+      <Col
+        span={10}
+        style={{
+          textAlign: 'left',
+          height: 50,
+          display: 'flex',
+          justifyContent: 'left',
+        }}
+      >
+        <span>
+          Sim Yu Hui, Kellie {' '}| {' '}
+          Looking to use my engineering skills to aid those in need
+          {' '}
+          {' '}
+          <Icon type="bulb" theme="filled" />
+        </span>
+      </Col>
+      <Col
+        span={12}
+        style={{
+          textAlign: 'left',
+          height: 50,
+          display: 'flex',
+          justifyContent: 'flex-end',
+          textTransform: 'uppercase',
+        }}
+      >
+        <div style={{width: 'fit-content', margin: 'auto 0px'}}>
+          <Link href="/home" as={ process.env.BACKEND_URL + '/home'}>
+            <a>
+              Home
+            </a>
+          </Link>
+        </div>
+        <div style={{width: 'fit-content', margin: 'auto 0px'}}>
+          <Link href="/about" as={ process.env.BACKEND_URL + '/about'}>
+            <a>
+              About
+            </a>
+          </Link>
+        </div>
+        <div style={{width: 'fit-content', margin: 'auto 0px'}}>
+          <Link href="/projects" as={ process.env.BACKEND_URL + '/projects'}>
+            <a>
+              Projects
+            </a>
+          </Link>
+        </div>
+        <div style={{width: 'fit-content', margin: 'auto 0px'}}>
+          <Link href="/blog" as={ process.env.BACKEND_URL + '/blog'}>
+            <a>
+              Blog
+            </a>
+          </Link>
+        </div>
+        <div style={{width: 'fit-content', margin: 'auto 0px'}}>
+          <Link href="/contact" as={ process.env.BACKEND_URL + '/contact'}>
+            <a>
+              Contact
+            </a>
+          </Link>
+        </div>
+      </Col>
+    </Row>
+  </Header>
     <br />
     <Row justify="center" type="flex">
       <Col

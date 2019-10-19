@@ -27,7 +27,7 @@ export default () => (
         <Col
           span={12}
           style={{
-            textAlign: 'right',
+            textAlign: 'left',
             height: 50,
             display: 'flex',
             justifyContent: 'flex-end',
@@ -35,35 +35,35 @@ export default () => (
           }}
         >
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/home">
+            <Link href="/home" as={process.env.BACKEND_URL + '/home'}>
               <a>
                 Home
               </a>
             </Link>
           </div>
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/about">
+            <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
               <a>
                 About
               </a>
             </Link>
           </div>
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/projects">
+            <Link href="/projects" as={process.env.BACKEND_URL + '/projects'}>
               <a>
                 Projects
               </a>
             </Link>
           </div>
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/blog">
+            <Link href="/blog" as={process.env.BACKEND_URL + '/blog'}>
               <a>
                 Blog
               </a>
             </Link>
           </div>
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/contact">
+            <Link href="/contact" as={process.env.BACKEND_URL + '/contact'}>
               <a>
                 Contact
               </a>

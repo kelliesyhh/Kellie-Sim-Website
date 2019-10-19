@@ -39,7 +39,7 @@ export default () => (
         <Col
           span={12}
           style={{
-            textAlign: 'right',
+            textAlign: 'left',
             height: 50,
             display: 'flex',
             justifyContent: 'flex-end',
@@ -47,35 +47,35 @@ export default () => (
           }}
         >
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/home">
+            <Link href="/home" as={process.env.BACKEND_URL + '/home'}>
               <a>
                 Home
               </a>
             </Link>
           </div>
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/about">
+            <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
               <a>
                 About
               </a>
             </Link>
           </div>
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/projects">
+            <Link href="/projects" as={process.env.BACKEND_URL + '/projects'}>
               <a>
                 Projects
               </a>
             </Link>
           </div>
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/blog">
+            <Link href="/blog" as={process.env.BACKEND_URL + '/blog'}>
               <a>
                 Blog
               </a>
             </Link>
           </div>
           <div style={{width: 'fit-content', margin: 'auto 0px'}}>
-            <Link href="/contact">
+            <Link href="/contact" as={process.env.BACKEND_URL + '/contact'}>
               <a>
                 Contact
               </a>
@@ -1111,7 +1111,9 @@ export default () => (
                       mozallowfullscreen="true"
                       webkitallowfullscreen="true"
                     />
-                    <p>(Last updated 27 September 2019, more updates will come soon!)</p>
+                    <p>
+                      (Last updated 27 September 2019, more updates will come soon!)
+                    </p>
                   </div>
                 </Col>
               </Row>
@@ -1267,11 +1269,11 @@ export default () => (
                   </div>
                   <br />
                   <div>
-                    <iframe                       
-                        src="https://drive.google.com/file/d/1wrpx89pHOmazUICgRTBL6A2M9p9pQPUs/view?usp=sharing"
-                        width="640"
-                        height="480"
-                     />
+                    <iframe
+                      src="https://drive.google.com/file/d/1wrpx89pHOmazUICgRTBL6A2M9p9pQPUs/view?usp=sharing"
+                      width="640"
+                      height="480"
+                    />
                   </div>
                 </Col>
               </Row>
