@@ -1,3 +1,5 @@
+const debug = process.env.NODE_ENV !== "production";
+
 module.exports = () => {
   /* eslint-disable */
   const withLess = require('@zeit/next-less')
@@ -16,6 +18,7 @@ module.exports = () => {
     lessLoaderOptions: {
       javascriptEnabled: true,
       modifyVars: themeVariables // make your antd custom effective
-    }
+    },
+    assetPrefix: !debug ? 'https://kelliesyhh-io.github.io/Kellie-Sim-Website/' : '',
   })
 };
